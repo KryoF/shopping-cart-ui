@@ -1,0 +1,154 @@
+.empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+    gap: 2.5rem;
+    font-weight: bold;
+}
+
+.title {
+    font-size: var(--h1);
+    font-weight: bold;
+    text-align: center;
+    margin: 2.5rem 0;
+    margin-top: 3.5rem;
+}
+
+.itemsTableDesk {
+    font-size: 1.8rem;
+    border-collapse: collapse;
+    margin: 2.5rem auto;
+    min-width: 500px;
+    border-bottom: 1px solid var(--black);
+}
+
+.itemsTableDesk thead tr{
+   border-bottom: 1px solid var(--black);
+}
+
+.itemsTableDesk tbody {
+    border-bottom: 1px solid var(--black);
+}
+
+.itemsTableDesk th, .itemsTableDesk td {
+    padding: 2.5rem;
+    text-align: center;
+}
+.itemsTableDesk th:first-child,
+.itemsTableDesk td:first-child {
+    text-align: left;
+    padding-left: 0;
+}
+.itemsTableDesk th:last-child,
+.itemsTableDesk tr td:last-child {
+    text-align: right;
+    padding-right: 0;
+}
+
+
+
+.tdProduct  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+}
+.imageContainer {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    margin-right: 2.5rem;
+}
+.productImage {
+    object-fit: contain;
+}
+
+
+.updateQuantityDIV {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+
+.CheckoutDiv {
+    width: fit-content;
+    margin: auto;
+}
+
+.paymentDiv {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin: 3.5rem auto;
+}
+
+
+.itemsTableMobile {
+    display: none;
+}
+
+@media all and (max-width: 850px) {
+    .itemsTableDesk {
+        display: none;
+    }
+    .itemsTableMobile {
+        font-size: 1.8rem;
+        display: flex;
+        margin: 2.5rem auto;
+        flex-direction: row;
+        gap: 3rem;
+        max-width: 500px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .itemsTableDesk thead {
+        display: none;
+    }
+
+    .itemsTableMobile .tdProduct {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .itemsTableMobile .imageContainer {
+        margin: auto;
+        width: 200px;
+        height: 200px;
+    }
+
+    .itemsTableMobile > div  {
+        border-bottom: 1px solid var(--black);
+        padding-bottom: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .itemsTableMobile > div > div {
+        display: flex;
+        width: 100%;
+    }
+
+    .quantityAndSize {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+}
+
+@media all and (max-width: 500px) {
+
+    .itemsTableMobile {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+}

@@ -1,0 +1,72 @@
+@import './fonts.css';
+
+:root {
+	/*colors*/
+	--black: #000;
+	--white: #fff;
+	--blue: #006adc;
+	--yellow: rgb(255, 217, 0);
+
+	--background: #eeeeee;
+	
+	/* Border Radious */
+	--br-1: 0.5rem;
+	--br-2: 1rem;
+	--br-3: 2rem;
+}
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+	padding: 0;
+	border: 0;
+	margin: 0;
+}
+html {
+	font-size: 10px;
+	/* font-family: "Monserrat */
+}
+body {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	border: 0;
+	margin: 0 !important;
+	font-weight: normal;
+	background-color: var(--white);
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.btn-primary {
+	background-color: var(--yellow);
+	color: var(--black);
+	font-weight: bold;
+	letter-spacing: 1px;
+	padding: 1rem 2rem;
+	border: none;
+	border-radius: var(--br-1);
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+.btn-primary:hover {
+	background-color: var(--black);
+	color: var(--white);
+}
